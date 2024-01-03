@@ -6,11 +6,59 @@
 	font-family: 'Zighead';
 	src: url('/assets/font/Zighead.otf');
   }
+
+  @font-face {
+	font-family: 'Romantic';
+	src: url('/assets/romantic/ROMANTIC.TTF');
+  }
+
+  .marquee {
+	margin: 30px auto;
+	white-space: nowrap;
+	overflow: hidden;
+	position: static;
+  }
+  
+  .marquee span {
+	display: inline-block;
+	padding-left: 100%;
+	animation: marquee 50s linear infinite;
+  }
+  
+  .marquee2 span {
+	animation-delay: 2.5s;
+  }
+  
+  @keyframes marquee {
+	0% {
+	  transform: translate(0, 0);
+	}
+	100% {
+	  transform: translate(-100%, 0);
+	}
+  }
+  
 /*
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+#tagline {
+	margin: 10px;
+	padding: 100x;
+	border: 0;
+	font-size: 100%;
+	text-align: left;
+	color: red;
+	font-family: "Playfair Display";
+	font-size: 20pt;
+	font-weight: 300;
+}
+
+
+
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -122,7 +170,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #ffd9ee;
+		background-color: white;
 		color: red;
 	}
 
@@ -220,8 +268,8 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 60px;
-
+		font-size: 20px;
+		color: red;
 	}
 
 	h3 {
@@ -271,7 +319,7 @@ input, select, textarea {
 	code {
 		border-radius: 8px;
 		border: solid 1px;
-		font-family: "Courier New", monospace;
+		font-family: "Playfair Display";
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -318,7 +366,7 @@ input, select, textarea {
 	}
 
 	a:hover {
-		color: red;
+		color: #bfff52;
 	}
 
 	strong, b {
@@ -1952,7 +2000,7 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(255, 255, 255, 0.2);
+			background-color: red;
 		}
 
 		input[type="submit"].icon:before,
@@ -1986,15 +2034,14 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #7ec3ee;
-			}
+				background-color: red;}
 
 			input[type="submit"].primary.icon:before,
 			input[type="reset"].primary.icon:before,
 			input[type="button"].primary.icon:before,
 			button.primary.icon:before,
 			.button.primary.icon:before {
-				color: #ffffff !important;
+				color: red !important;
 			}
 
 /* Form */
@@ -2351,24 +2398,26 @@ input, select, textarea {
 		}
 
 	.icon.major {
-		border-color: rgba(255, 255, 255, 0.35);
+		border-color: red;
 	}
 
 		.icon.major:before {
-			border-color: rgba(255, 255, 255, 0.35);
+			border-color: red;
 		}
 
 	.icon.alt {
-		border-color: rgba(255, 255, 255, 0.35);
-		color: #ffffff;
+		border-color: red;
+		color: red;
+		
 	}
 
 		.icon.alt:hover {
-			background-color: rgba(255, 255, 255, 0.075);
+			color: rgba(191, 255, 82);
+			border-color: rgba(191, 255, 82);
 		}
 
 		.icon.alt:active {
-			background-color: rgba(255, 255, 255, 0.2);
+			background-color: red;
 		}
 
 /* Image */
@@ -2377,7 +2426,9 @@ input, select, textarea {
 		border-radius: 8px;
 		border: 0;
 		display: inline-block;
-		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		position: center;
 	}
 
 		.image img {
@@ -2653,6 +2704,7 @@ input, select, textarea {
 
 		header.major h2 {
 			font-size: 2em;
+			color: red;
 		}
 
 			header.major h2:after {
@@ -2662,8 +2714,8 @@ input, select, textarea {
 				height: 2px;
 				margin: 0.7em 0 1em 0;
 				border-radius: 2px;
+				color: red;
 			}
-
 				section.special header.major h2:after, article.special header.major h2:after {
 					margin-left: auto;
 					margin-right: auto;
@@ -2713,7 +2765,8 @@ input, select, textarea {
 	}
 
 	header.major h2:after {
-		background-color: rgba(255, 255, 255, 0.35);
+		background-color: black;
+		color: red;
 	}
 
 /* Table */
@@ -3008,17 +3061,29 @@ input, select, textarea {
 				margin: 0 0 2em 0;
 			}
 
+		.spotlight .picture {
+			display: inline-block;
+			margin-left: 0em;
+			padding: 0.65em;
+			border-radius: 0%;
+		}
+			
+			.spotlight .pictureimg {
+				display: block;
+				border-radius: 0%;
+				width: 16em;
+			}
+
 		.spotlight .image {
 			display: inline-block;
 			margin-left: 4em;
 			padding: 0.65em;
-			border-radius: 100%;
-			border: solid 1px;
+			border-radius: 0%;
 		}
 
 			.spotlight .image img {
 				display: block;
-				border-radius: 100%;
+				border-radius: 0%;
 				width: 16em;
 			}
 
@@ -3043,6 +3108,7 @@ input, select, textarea {
 					.spotlight .content header.major h2:after {
 						margin-left: auto;
 						margin-right: auto;
+						color: red;
 					}
 
 					.spotlight .content .actions {
@@ -3226,17 +3292,18 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		background-color: #ffffff;
-		color: #636363;
+		background-color: white;
+		color: red;
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: white;
+		background-color: pn;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
 		text-align: center;
+		
 	}
 
 		#nav input, #nav select, #nav textarea {
@@ -3244,7 +3311,7 @@ input, select, textarea {
 		}
 
 		#nav a:hover {
-			color: #636363;
+			color: #bfff52
 		}
 
 		#nav strong, #nav b {
@@ -3304,11 +3371,10 @@ input, select, textarea {
 				}
 
 					#nav ul li a:hover {
-						background-color: rgba(222, 222, 222, 0.25);
+						color: #bfff52
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
 						box-shadow: none;
 					}
 
@@ -3316,7 +3382,7 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color: rgba(247, 247, 247, 0.95);
+			background-color: rgba(255,255,255, 0.75);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
@@ -3347,15 +3413,15 @@ input, select, textarea {
 	#main {
 		background-color: #ffffff;
 		color: #636363;
-		border-radius: 0.25em;
+		border-radius: 25px;
 	}
 
 		#main input, #main select, #main textarea {
-			color: #636363;
+			color: #ff0000;
 		}
 
 		#main a:hover {
-			color: #636363;
+			color: #bfff52			;
 		}
 
 		#main strong, #main b {
@@ -3364,6 +3430,7 @@ input, select, textarea {
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
 			color: #636363;
+			color: red;
 		}
 
 		#main blockquote {
@@ -3556,11 +3623,7 @@ input, select, textarea {
 		}
 
 		#main header.major h2:after {
-			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-color: white;
 		}
 
 		#main table tbody tr {
@@ -3713,9 +3776,10 @@ input, select, textarea {
 
 		#footer .copyright {
 			width: 100%;
-			margin: 2.5em 0 2em 0;
 			font-size: 0.8em;
-			text-align: center;
+			padding: 0.65em;
+			margin-left: 2em;
+			text-align:center;
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3794,3 +3858,4 @@ input, select, textarea {
 			}
 
 		}
+	
