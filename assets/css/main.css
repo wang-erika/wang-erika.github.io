@@ -1,6 +1,11 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+@import "https://fonts.googleapis.com/css?family=Playfair+Display";
 
+@font-face {
+	font-family: 'Zighead';
+	src: url('/assets/font/Zighead.otf');
+  }
 /*
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
@@ -17,7 +22,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -57,7 +62,7 @@ body {
 
 mark {
 	background-color: transparent;
-	color: inherit;
+	color: red;
 }
 
 input::-moz-focus-inner {
@@ -99,11 +104,8 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-color: black;
+
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -120,12 +122,13 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
-		color: rgba(255, 255, 255, 0.65);
+		background-color: #ffd9ee;
+		color: red;
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		color: red;
+		font-family: "Playfair Display";
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -134,6 +137,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
+				color: red;
 				font-size: 14pt;
 			}
 
@@ -142,6 +146,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
+				color: red;
 				font-size: 12pt;
 			}
 
@@ -150,6 +155,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
+				color: red;
 				font-size: 11pt;
 			}
 
@@ -194,6 +200,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
+		color: red;
 		font-weight: 300;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
@@ -201,17 +208,20 @@ input, select, textarea {
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
+			color: red;
 			text-decoration: none;
 		}
 
 	h1 {
-		font-size: 2.5em;
+		color: red;
+		font-family: 'Zighead';
+		font-size: 200px;
 		line-height: 1.2;
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 60px;
+
 	}
 
 	h3 {
@@ -233,6 +243,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h1 {
+			color: red;
 			font-size: 2em;
 		}
 
@@ -303,23 +314,23 @@ input, select, textarea {
 	}
 
 	input, select, textarea {
-		color: #ffffff;
+		color: red;
 	}
 
 	a:hover {
-		color: #ffffff;
+		color: red;
 	}
 
 	strong, b {
-		color: #ffffff;
+		color: red;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: red;
 	}
 
 	blockquote {
-		border-left-color: rgba(255, 255, 255, 0.35);
+		border-left-color: red;
 	}
 
 	code {
@@ -3221,7 +3232,7 @@ input, select, textarea {
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #f7f7f7;
+		background-color: white;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
